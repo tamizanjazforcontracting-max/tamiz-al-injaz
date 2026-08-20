@@ -1,0 +1,73 @@
+/* Image Loading Optimization */
+img {
+  /* Enable hardware acceleration for better performance */
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Loading skeleton animation */
+@keyframes shimmer {
+  0% {
+    background-position: -2000px 0;
+  }
+  100% {
+    background-position: 2000px 0;
+  }
+}
+
+.image-skeleton {
+  animation: shimmer 2s infinite;
+  background: linear-gradient(
+    to right,
+    rgba(148, 163, 184, 0.2) 0%,
+    rgba(148, 163, 184, 0.3) 20%,
+    rgba(148, 163, 184, 0.2) 40%,
+    rgba(148, 163, 184, 0.2) 100%
+  );
+  background-size: 2000px 100%;
+}
+
+/* Smooth image transitions */
+img[loading="lazy"] {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+img[loading="lazy"].loaded {
+  opacity: 1;
+}
+
+/* Prevent image flickering */
+picture {
+  display: block;
+}
+
+/* Responsive images container */
+.image-container {
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(135deg, rgb(30, 41, 59) 0%, rgb(15, 23, 42) 100%);
+}
+
+/* Image hover effects with optimized transforms */
+.image-container img {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.image-container:hover img {
+  transform: scale(1.05);
+}
+
+/* Dark mode image filters */
+@media (prefers-color-scheme: dark) {
+  img[alt] {
+    filter: brightness(0.95);
+  }
+}
+
+/* High quality image rendering */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}

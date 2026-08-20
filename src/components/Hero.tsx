@@ -35,7 +35,9 @@ export const Hero: React.FC<HeroProps> = ({ lang, onOpenQuoteModal, onDownloadPr
           src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80"
           alt="مؤسسة تميز الإنجاز للمقاولات العامة"
           referrerPolicy="no-referrer"
-          className="w-full h-full object-cover object-center opacity-40 filter contrast-110 brightness-75 scale-105 animate-pulse duration-10000"
+          loading="eager"
+          decoding="async"
+          className="w-full h-full object-cover object-center opacity-40 filter contrast-110 brightness-75 scale-105"
         />
         {/* Modern multi-layer gradient overlays for depth and contrast */}
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/85 to-slate-950/65" />

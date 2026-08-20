@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { SERVICES } from '../data/companyData';
 import { Language, ServiceItem } from '../types';
 import {
@@ -28,6 +28,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
 }) => {
   const isRtl = lang === 'ar';
   const ArrowIcon = isRtl ? ArrowLeft : ArrowRight;
+  const [loadedImages, setLoadedImages] = useState<Set<string>>(new Set());
 
   const getServiceIcon = (name: string) => {
     switch (name) {
@@ -77,16 +78,21 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
               className="rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-cyan-500/40 transition-all duration-300 flex flex-col overflow-hidden group hover:shadow-2xl hover:shadow-cyan-950/40 hover:-translate-y-1"
             >
               {/* Service Card Image */}
-              <div className="relative h-52 overflow-hidden">
+              <div className="relative h-52 overflow-hidden bg-slate-800">
                 <img
                   src={service.image}
                   alt={service.title[lang]}
                   referrerPolicy="no-referrer"
+                  loading="lazy"
+                  decoding="async"
+                  onLoad={() => setLoadedImages(prev => new Set([...prev, service.id]))}
                   onError={(e) => {
                     (e.target as HTMLImageElement).src =
                       'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80';
                   }}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-90"
+                  className={`w-full h-full object-cover group-hover:scale-105 transition-all duration-500 filter brightness-90 ${
+                    loadedImages.has(service.id) ? 'opacity-100' : 'opacity-50 blur-sm'
+                  }`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/30 to-transparent" />
                 <div className="absolute top-4 right-4 rtl:right-4 rtl:left-auto ltr:left-4 ltr:right-auto w-12 h-12 rounded-xl bg-slate-950/80 backdrop-blur-md border border-slate-700/80 flex items-center justify-center shadow-lg">

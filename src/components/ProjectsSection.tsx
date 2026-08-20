@@ -93,11 +93,17 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ lang, onSelect
               className="group cursor-pointer rounded-2xl bg-slate-900 border border-slate-800 hover:border-cyan-500/50 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-950/40 hover:-translate-y-1 flex flex-col justify-between"
             >
               {/* Image Container */}
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-64 overflow-hidden bg-slate-800">
                 <img
                   src={project.image}
                   alt={project.title[lang]}
                   referrerPolicy="no-referrer"
+                  loading="lazy"
+                  decoding="async"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src =
+                      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80';
+                  }}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-95"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent" />
