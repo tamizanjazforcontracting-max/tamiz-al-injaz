@@ -1,0 +1,8 @@
+{
+  "name": "مؤسسة تميز الإنجاز للمقاولات",
+  "description": "الموقع الرسمي لمؤسسة تميز الإنجاز للمقاولات العامة  - رواد الإنشاءات، التشطيبات الفاخرة، البنية التحتية وإدارة المشاريع الهندسية.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
