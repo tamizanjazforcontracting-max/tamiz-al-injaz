@@ -74,7 +74,7 @@ export const SERVICES: ServiceItem[] = [
       en: 'We provide integrated civil and structural engineering solutions strictly compliant with the Saudi Building Code, utilizing state-of-the-art construction equipment and rigorous PM standards.'
     },
     iconName: 'Sparkles',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1504917595217-936abc5b4d44?auto=format&fit=crop&w=1200&q=80',
     features: {
       ar: [
         'تنفيذ الهياكل الخرسانية المسلحة والمعدنية (Steel Structure)',
