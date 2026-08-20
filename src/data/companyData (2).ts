@@ -73,8 +73,8 @@ export const SERVICES: ServiceItem[] = [
       ar: 'نقدم حلولاً متكاملة لتنفيذ المنشآت الخرسانية والمعدنية بأعلى معايير كود البناء السعودي. يتولى فريقنا الهندسي المتخصص إدارة كافة المراحل الإنشائية بأحدث المعدات وأفضل ممارسات إدارة المشاريع الهندسية.',
       en: 'We provide integrated civil and structural engineering solutions strictly compliant with the Saudi Building Code, utilizing state-of-the-art construction equipment and rigorous PM standards.'
     },
-    iconName: 'Building2',
-    image: 'https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=1200&q=80',
+    iconName: 'Sparkles',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
     features: {
       ar: [
         'تنفيذ الهياكل الخرسانية المسلحة والمعدنية (Steel Structure)',
