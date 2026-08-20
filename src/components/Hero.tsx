@@ -34,7 +34,6 @@ export const Hero: React.FC<HeroProps> = ({ lang, onOpenQuoteModal, onDownloadPr
         <img
           src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80"
           alt="مؤسسة تميز الإنجاز للمقاولات العامة"
-          referrerPolicy="no-referrer"
           loading="eager"
           decoding="async"
           className="w-full h-full object-cover object-center opacity-40 filter contrast-110 brightness-75 scale-105"

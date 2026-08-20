@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { SERVICES } from '../data/companyData';
 import { Language, ServiceItem } from '../types';
 import {
@@ -28,7 +28,6 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
 }) => {
   const isRtl = lang === 'ar';
   const ArrowIcon = isRtl ? ArrowLeft : ArrowRight;
-  const [loadedImages, setLoadedImages] = useState<Set<string>>(new Set());
 
   const getServiceIcon = (name: string) => {
     switch (name) {
@@ -82,17 +81,13 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                 <img
                   src={service.image}
                   alt={service.title[lang]}
-                  referrerPolicy="no-referrer"
                   loading="lazy"
                   decoding="async"
-                  onLoad={() => setLoadedImages(prev => new Set([...prev, service.id]))}
                   onError={(e) => {
                     (e.target as HTMLImageElement).src =
                       'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80';
                   }}
-                  className={`w-full h-full object-cover group-hover:scale-105 transition-all duration-500 filter brightness-90 ${
-                    loadedImages.has(service.id) ? 'opacity-100' : 'opacity-50 blur-sm'
-                  }`}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 filter brightness-90"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/30 to-transparent" />
                 <div className="absolute top-4 right-4 rtl:right-4 rtl:left-auto ltr:left-4 ltr:right-auto w-12 h-12 rounded-xl bg-slate-950/80 backdrop-blur-md border border-slate-700/80 flex items-center justify-center shadow-lg">

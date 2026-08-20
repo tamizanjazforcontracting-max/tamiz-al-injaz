@@ -74,7 +74,7 @@ export const SERVICES: ServiceItem[] = [
       en: 'We provide integrated civil and structural engineering solutions strictly compliant with the Saudi Building Code, utilizing state-of-the-art construction equipment and rigorous PM standards.'
     },
     iconName: 'Building2',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.pexels.com/photos/159575/bridge-brooklyn-new-york-159575.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop',
     features: {
       ar: [
         'تنفيذ الهياكل الخرسانية المسلحة والمعدنية (Steel Structure)',
@@ -109,7 +109,7 @@ export const SERVICES: ServiceItem[] = [
       en: 'Transforming architectural concepts into inspiring spaces with curtain walls, GRC facades, Italian marble, custom acoustic ceilings, and integrated architectural lighting.'
     },
     iconName: 'Sparkles',
-    image: 'https://images.unsplash.com/photo-1565182999561-8b9e94b9d332?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop',
     features: {
       ar: [
         'توريد وتركيب الرخام الإيطالي والإسباني والحجر الطبيعي',
@@ -144,7 +144,7 @@ export const SERVICES: ServiceItem[] = [
       en: 'Proven capability in executing utility infrastructure for subdivisions and major developments with state-of-the-art hydraulic testing and geotechnical compliance.'
     },
     iconName: 'Network',
-    image: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.pexels.com/photos/416553/hummingbird-bird-birds-416553.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop',
     features: {
       ar: [
         'شبكات مياه الشرب وشبكات الإطفاء المعتمدة من الدفاع المدني',
@@ -179,7 +179,7 @@ export const SERVICES: ServiceItem[] = [
       en: 'Advanced structural rehabilitation using carbon fiber wraps (CFRP), concrete jacketing, structural underpinning, and comprehensive architectural modernization.'
     },
     iconName: 'Hammer',
-    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.pexels.com/photos/209785/pexels-photo-209785.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop',
     features: {
       ar: [
         'تدعيم العناصر الإنشائية الحاملة ومعالجة هبوط التربة',
@@ -214,7 +214,7 @@ export const SERVICES: ServiceItem[] = [
       en: 'Turnkey execution of mechanical, electrical, and plumbing engineering, along with fire alarm and suppression systems fully compliant with Civil Defense standards.'
     },
     iconName: 'Zap',
-    image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.pexels.com/photos/5632393/pexels-photo-5632393.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop',
     features: {
       ar: [
         'أنظمة التكييف المركزي والـ VRF والدكت المعزول',

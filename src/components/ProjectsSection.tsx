@@ -97,7 +97,6 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ lang, onSelect
                 <img
                   src={project.image}
                   alt={project.title[lang]}
-                  referrerPolicy="no-referrer"
                   loading="lazy"
                   decoding="async"
                   onError={(e) => {
