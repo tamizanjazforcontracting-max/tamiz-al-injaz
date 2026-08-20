@@ -74,7 +74,7 @@ export const SERVICES: ServiceItem[] = [
       en: 'We provide integrated civil and structural engineering solutions strictly compliant with the Saudi Building Code, utilizing state-of-the-art construction equipment and rigorous PM standards.'
     },
     iconName: 'Building2',
-    image: 'https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
     features: {
       ar: [
         'تنفيذ الهياكل الخرسانية المسلحة والمعدنية (Steel Structure)',
@@ -109,7 +109,7 @@ export const SERVICES: ServiceItem[] = [
       en: 'Transforming architectural concepts into inspiring spaces with curtain walls, GRC facades, Italian marble, custom acoustic ceilings, and integrated architectural lighting.'
     },
     iconName: 'Sparkles',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1565182999561-8b9e94b9d332?auto=format&fit=crop&w=1200&q=80',
     features: {
       ar: [
         'توريد وتركيب الرخام الإيطالي والإسباني والحجر الطبيعي',
